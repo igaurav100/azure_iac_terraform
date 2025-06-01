@@ -15,4 +15,3 @@ modules/
     ├── main.tf
     ├── variables.tf
     └── outputs.tf# terraform_IAC_Azure
-# azure_iac_terraform
