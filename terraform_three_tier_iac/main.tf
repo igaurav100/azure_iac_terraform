@@ -25,7 +25,7 @@ module "app_service" {
   app_name            = "${var.prefix}-app"
   subnet_id           = module.network.app_subnet_id
   app_settings = {
-    "DATABASE_URL" = module.database.db_connection_string
+    "DATABASE_URL"  = module.database.db_connection_string
     "WEBSITES_PORT" = "8080"
   }
 }
