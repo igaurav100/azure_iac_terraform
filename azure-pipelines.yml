@@ -20,3 +20,5 @@ steps:
 
 - script: |
     echo hello world
+    ls 
+    ls -la
