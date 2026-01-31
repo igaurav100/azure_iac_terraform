@@ -26,8 +26,9 @@ steps:
   displayName: Commands
 
 - script: |
-    echo $Build.BuildId
-    echo $Build.BuildNumber
-    echo $System.TeamProject
-    echo $Agent.OS
+    echo ${Build.BuildId}
+    echo ${Build.BuildNumber}
+    echo ${System.TeamProject}
+    echo ${Agent.OS}
+  displayName: Checking some system variables
 
