@@ -22,3 +22,4 @@ steps:
     echo hello world
     ls 
     ls -la
+    ls terra*
