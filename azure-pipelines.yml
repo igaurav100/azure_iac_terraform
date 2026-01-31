@@ -23,3 +23,11 @@ steps:
     ls 
     ls -la
     ls terra*
+  displayName: Commands
+
+- script: |
+    echo $Build.BuildId
+    echo $Build.BuildNumber
+    echo $System.TeamProject
+    echo $Agent.OS
+
