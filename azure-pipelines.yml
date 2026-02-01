@@ -57,5 +57,6 @@ steps:
     echo $(Bankpassword)
     echo $(BankUser)
     echo $(Surname)
+    python --version
   displayName: Checking group variables in Pipeline
 
