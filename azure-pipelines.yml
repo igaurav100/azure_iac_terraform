@@ -10,9 +10,15 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  # myVariable: 'MyActualValue'
-  # anotherVariable: 'myActualAnotherValue'
-  - group: TerraformVars
+  # Individual variables
+  - name: firstName
+    value: 'Gaurav'
+  - name: lastName
+    value: 'Sharma'
+  - name: fullName
+    value: '$(firstName) $(lastName)'
+
+
 
 steps:
 - script: echo Hello, world!
@@ -42,5 +48,7 @@ steps:
     echo $(TF_VAR_client_secret)
     echo $(TF_VAR_subscription_id)
     echo $(TF_VAR_tenant_id)
+    echo $(name)
+    echo $(lastName)
   displayName: Checking group variables in Pipeline
 
