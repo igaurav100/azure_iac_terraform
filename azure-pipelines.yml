@@ -18,6 +18,7 @@ variables:
   - name: fullName
     value: '$(firstName) $(lastName)'
   - group: TerraformVars
+  - group: testvariables
 
 
 
