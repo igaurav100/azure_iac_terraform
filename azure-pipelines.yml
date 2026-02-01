@@ -39,4 +39,5 @@ steps:
 - script: 
     echo $(myVariable)
     echo $(anotherVariable)
+  displayName: Checking custom variables in Pipeline
 
