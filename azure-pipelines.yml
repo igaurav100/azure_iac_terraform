@@ -52,5 +52,9 @@ steps:
     echo $(firstName)
     echo $(lastName)
     echo $(fullName)
+    echo now executing for testvariables
+    echo $(Bankpassword)
+    echo $(BankUser)
+    echo $(Surname)
   displayName: Checking group variables in Pipeline
 
