@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  myVariable: 'MyActualValue'
+  anotherVariable: 'myActualAnotherValue'
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -31,4 +35,8 @@ steps:
     echo $(System.TeamProject)
     echo $(Agent.OS)
   displayName: Checking some system variables
+
+- script: 
+    echo $(myVariable)
+    echo $(anotherVariable)
 
