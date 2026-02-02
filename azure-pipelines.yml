@@ -75,7 +75,7 @@ steps:
     python -c "print('Hello world')"
     python -c "print('Hello World from Azure DevOps!')"
     python -c "print('My name is $(firstName) $(lastName)')"
-    echo $(parameters.environment)
-    echo $(parameters.workspace_id)
+    echo ${{ parameters.environment }}
+    echo ${{ parameters.workspace_id }}
   displayName: Checking group variables in Pipeline
 
